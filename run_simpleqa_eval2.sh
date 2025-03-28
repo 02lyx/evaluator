@@ -8,7 +8,7 @@ uv pip install wandb --no-cache-dir --link-mode=copy
 # Parameter settings
 GENERATION_MODEL="Yuanxin-Liu/Qwen2.5-7B_Mix-Math-yt-rbt-grpo_0.5_exp12_gen_8_test_8_clip_ratio_-1_outer_kl-320"  # Model for generating answers
 EVALUATION_MODEL="Qwen/QwQ-32B"  # Model for evaluating answers
-ALL_GPUS="4,5,6,7"               # Available GPU IDs
+ALL_GPUS="0,1,2,3"               # Available GPU IDs
 ANSWERS_FILE="simpleqa_answers_without_clip_320_${DATASET_SIZE}_${NUM_SAMPLES}.jsonl"  # File to store generated answers
 RESULTS_FILE="simpleqa_results_without_clip_320_${DATASET_SIZE}_${NUM_SAMPLES}.json"   # File to store evaluation results
 BATCH_SIZE=8                     # Batch size
